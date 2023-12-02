@@ -1,0 +1,289 @@
+.navbar {
+    list-style: none;
+    background-color: #333; /* Background color for the navbar */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("./images/cheeto_carpet.jpg");
+  }
+
+  .navbar li {
+    text-align: center;
+  }
+
+  .navbar li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: white; /* Text color for links */
+    text-decoration: none;
+    font-size: 22px; /* Adjust the font size as needed for accessibility */
+  }
+
+  .navbar li a:hover {
+    background-color: #555; /* Background color on hover */
+  }
+
+  .navbar li.active a {
+    background-color: #ff1493; /* Background color for the current page link */
+    color: black;
+    text-transform: uppercase
+  }
+
+  .skip {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    opacity: 0;
+  }
+  .skip:focus {
+    left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1f1f1f; /* Dark background color */
+    color: #fff; /* Light text color */
+  }
+  
+  .drill-music-component {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    height: 60vh;
+    justify-content: center;
+  }
+
+  #slide-p {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  .slide img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+  }
+  
+  .slides {
+    display: flex;
+    justify-content: center;
+    margin-top : 20vh;
+    margin-bottom: 20vh;
+  }
+  .content {
+    text-align: center;
+    margin-right : 10vw;
+    border: 2px solid gray;;
+    border-radius: 50%;
+    padding: 8vmin;
+    background-color: #333;
+  }
+  .headings{
+    margin-left: 30vw;
+    margin-right: 30vw;
+    text-align: center;
+    margin-bottom: 7vh;
+    margin-top: 10vh;
+    border-bottom: 1vmin solid #ff4500;
+    font-size:xx-large;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .play-button {
+    background-color: #ff4500; /* Play button color, use drill music theme */
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-style: solid;
+    border-width: 10px 15px 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .play-button:hover {
+    background-color: #cc3700; /* Darker color on hover */
+  }
+  
+
+  .chose {
+    margin-left: 25%;
+    margin-right: 25%;
+
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap : 5vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    display: none;
+  }
+
+  .grid-image {
+    width: 20vw;
+    height: 20vh;
+    object-fit: cover;
+    margin-bottom: 3vh;
+  }
+
+  .gap {
+    margin-top: 10vh;
+  }
+
+  .photo-button {
+    text-align: center;
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    margin-top: -4vh;
+    margin-bottom: 4vh;
+  }
+
+  .button-photo {
+    font-size: 3rem;
+    background-color: #ff4500;
+    border: 10px 15px 10px 15px solid lightgray;
+    padding: 1vmin;
+    box-shadow: 20px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .button-photo:hover {
+    background-color: #4CAF50; /* Change to your preferred color */
+    color: white;
+  }
+
+
+  .style-grid {
+    margin-left : 20vw;
+    margin-right: 20vw;;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap : 2vw;
+    border-left: 1vmin solid #ff4500;
+    padding : 5vw;
+
+  }
+
+  .style-text {
+    font-size: larger;
+  }
+
+  .style-image {
+    width: 20vw;
+    height: 20vh;
+    object-fit: cover;
+    margin-bottom: 3vh;
+  }
+
+  .description {
+    font-size: xx-small;
+    margin-top : 2vh;
+    margin-left : 20vw;
+    margin-right: 20vw;
+    margin-bottom: 5vh;
+  }
+
+  .sample-beat {
+    text-align: center;
+  }
+
+  .sample-description {
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: -5vh;
+    border: 2px solid gray;;
+    border-radius: 20%;
+    padding: 1.8vmin;
+    background-color: #555;
+    margin-bottom: 2vh;
+  }
+
+  
+  .artist-profile {
+    display: flex;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #3a3f4b; /* Background color for the profile box */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Box shadow for a lifted appearance */
+  }
+  
+  .profile-image {
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-details {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .artist-name {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff1493; /* Vibrant orange color for the artist name */
+  }
+  
+  .detail-label {
+    font-weight: bold;
+    color: #ff1493; /* Vibrant orange color for detail labels */
+  }
+  
+  .accomplishments,
+  .favorite-songs {
+    margin-bottom: 15px;
+  }
+  
+  .accomplishments p,
+  .favorite-songs p {
+    margin: 5px 0;
+  }
+  
+  .d-description {
+    line-height: 1.6;
+  }
+  
+  /* Stylish link styles */
+  a {
+    color: #db7093; /* Light blue color for links */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
+
+  
+  
